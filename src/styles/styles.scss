@@ -1,0 +1,36 @@
+// Import Settings
+@import './base/settings';
+@import './base/base';
+
+// Required
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+
+// Create my own color
+$colors: (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $colors);
+
+// Import BootStrap
+@import 'bootstrap/scss/bootstrap.scss';
+
+// Local Components Styles
+@import './components/about';
+@import './components/blog';
+@import './components/dark';
+@import './components/home';
+@import './components/links';
+@import './components/scrollbar';
+@import './components/switchDark';

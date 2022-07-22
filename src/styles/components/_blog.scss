@@ -1,0 +1,46 @@
+/* Blog SCSS */
+// Change Color Of Cards
+.cardBlog {
+    background: none !important;
+    border: 0;
+
+    a {
+        color: $primary !important;
+        text-decoration: none;
+    
+        &:hover, &:active {
+            color: $primary-hover !important;
+        }
+    }
+}
+
+body.dark .allCards {
+    background: $dark-card !important;
+    border: 0;
+    color: $dark-cont !important;
+}
+
+
+@media (min-width:768px) {
+    .cardBlog, .allCards {
+        width: 100% !important;
+        margin: 0 auto;
+        float: none;
+    }
+}
+
+@media (min-width:1400px) {
+    .cardBlog, .allCards {
+        width: 70% !important;
+        margin: 0 auto;
+        float: none;
+    }
+}
+
+.card-img {
+    transition: all ease-out .2s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}

@@ -1,0 +1,17 @@
+# Error Routes Production | Error 500 Server
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Redirect Pages 301
+redirect 301 /verse https://craftianosmoney.com/verse-app/
+redirect 301 /redes https://craftianosmoney.com/sobre-mi/
+
+# Redirect Page 404
+ErrorDocument 404 ./index.html

@@ -1,0 +1,45 @@
+// Body styles
+body {
+    background-color: $primary;
+    margin: auto;
+}
+
+// Set Fonts
+.header {
+    font-family: Roboto, sans-serif;
+    background: $dark-mode;
+}
+
+#menu a {
+    padding-left: 20px;
+}
+
+.article {
+    font-family: Karla;
+    
+}
+
+.btn-outline-success {
+    color: $primary !important;
+    border-color: $primary-hover !important;
+    text-decoration: none;
+    
+    &:hover, &:active {
+        background: $primary-hover !important;
+        color: $light !important;
+    }
+}
+
+.footer {
+    background: $dark-mode;
+    color: $dark-cont;
+    font-family: Roboto;
+    
+    .enlacesfooter a {
+        color: $footerLnk !important;
+        
+        &:hover {
+            color: $primary-hover !important;
+        }
+    }
+}

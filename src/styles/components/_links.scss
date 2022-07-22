@@ -1,0 +1,54 @@
+/* Links SCSS */
+.enlaces {
+    li {
+        padding-top: .5%;
+    }
+
+    a {
+        color: $primary !important;
+        text-decoration: none;
+        
+        &:hover, &:active {
+            color: $primary-hover !important;
+        }
+    }
+
+    .btn:hover, .btn:active {
+        color: $primary !important;
+    }
+}
+
+/* Styles Predifine - li */
+.bancos-online {
+    list-style: '🏦 ';
+    li a {
+        padding-left: 0.2em;
+    }
+}
+.cashback {
+    list-style: '💸 ';
+    li a {
+        padding-left: 0.2em;
+    }
+}
+
+.dinero-nada {
+    list-style: '🤯 ';
+    li a {
+        padding-left: 0.2em;
+    }
+}
+
+.encuestas {
+    list-style: '📙 ';
+    li a {
+        padding-left: 0.2em;
+    }
+}
+
+.list-custom {
+    list-style: '🚀 ';
+    li a {
+        padding-left: 0.2em;
+    }
+}

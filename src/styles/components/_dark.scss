@@ -1,0 +1,42 @@
+/* Dark SCSS */
+body.dark {
+    background: $dark-mode;
+
+    .article {
+        color: $dark-cont;
+    }
+    
+    .card {
+        background-color: $dark-card;
+        border: 0;
+        color: $dark-cont;
+    }
+
+    .footer {
+        color: $dark-cont;
+    }
+}
+
+.card {
+    background-color: $dark-mode;
+    border: 0;
+    color: $dark-cont;
+}
+
+/* body.dark nav a {
+    color: #c8c8c8
+}
+
+body.dark nav a:hover {
+    color: #fefefe
+} */
+
+/* body.dark .dropdown-menu {
+    background-color: #343a40;
+    border: 0;
+    color: #e8ffe8
+} */
+
+/* body.dark .dropdown-menu>a {
+    background-color: #343a40
+} */

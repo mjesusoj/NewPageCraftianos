@@ -1,0 +1,30 @@
+/* ScrollBar SCSS */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: $primary;
+    border-radius: 10px;
+    border-right: 2px solid $primary;
+}
+
+/* Button GoUp to the page */
+.go-up {
+    float: right;
+    /* display: none; */
+    padding: 10px;
+    width: 50px;
+    height: 65px;
+    border-radius: 60%;
+    margin-top: -4%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fff;
+}
+
+.go-up img {
+    margin-top: 20%
+}

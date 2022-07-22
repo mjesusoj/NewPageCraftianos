@@ -1,0 +1,36 @@
+/* Home SCSS */
+.card {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    color: $warning;
+}
+
+.imgCraftianos {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width:768px) {
+    .cardHome {
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width:992px) {
+    .cardHome {
+        width: 70%;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+    }
+    
+    /* .switch {
+        margin-top: 2%;
+    } */
+}
