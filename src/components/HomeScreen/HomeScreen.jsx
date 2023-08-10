@@ -1,6 +1,10 @@
 import { Helmet } from 'react-helmet';
 import { HomeArticle } from './HomeArticle';
 
+import { trackEvent } from "@aptabase/web";
+trackEvent("app_started"); 
+trackEvent("page_view", { name: "Home Page", path: "/home" });
+
 export const HomeScreen = () => {
     const description = `Descubre la forma de generar DINERO realizando múltiples tareas, 
         con cashback, encuestas, promos y mucho MÁS | ¿Te unes? 👋`
